@@ -13,7 +13,7 @@ function Carousel1() {
         <div className='carousel-caption text-md-start'>
           <h1>Productos Premium</h1>
           <p>Tenemos una amplia colección</p>
-          <Button href="#" variant="primary" size="lg">Ver todos</Button>
+          <Button href="Catalog_Headphones" variant="dark" size="lg">Ver todos</Button>
         </div> 
         
         
@@ -28,7 +28,7 @@ function Carousel1() {
         <Carousel.Caption>
           <h1>Headphones En Promoción</h1>
           <p>Inalambricos y con cancelación de ruido.</p>
-          <Button href="#" variant="primary" size="lg">Revisar promociones</Button>
+          <Button href="Catalog_Headphones" variant="dark" size="lg">Revisar promociones</Button>
         </Carousel.Caption>
       </Carousel.Item>
       <Carousel.Item>
@@ -57,7 +57,7 @@ function Carousel1() {
           <p>
             Con resistencia al agua IP67
           </p>
-          <Button href="#" variant="primary" size="lg">Revisar parlantes</Button>
+          <Button href="/Catalog_Parlantes" variant="dark" size="lg">Revisar parlantes</Button>
         </div>
       </Carousel.Item>
     </Carousel>
