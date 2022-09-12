@@ -3,7 +3,7 @@ import '../carousel.rtl.css';
 import Button from 'react-bootstrap/Button';
 function Carousel1() {
   return (
-    <Carousel>
+    <Carousel >
       <Carousel.Item>
         <img
           className="d-block h-150 w-100"
