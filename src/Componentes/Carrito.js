@@ -19,7 +19,9 @@ const Carrito = () => {
         emptyCart
     } = useCart();
 
+
     if (isEmpty) return <div>
+        <br/>
         <br/>
         <h1 className="text-center">Carrito vacío</h1>
     </div>
@@ -52,7 +54,7 @@ const Carrito = () => {
                                         <img src={item.img} style={{height: '6rem'}} alt="dad"/>
                                     </td>
                                     <td> {item.Nombre}</td>
-                                    <td> ${item.price} </td>
+                                    <td> ${item.price.toLocaleString(undefined, {maximumFractionDigits:2})} </td>
                                     <td> {item.quantity}</td>
                                     <td>
                                         <Button variant="dark"
@@ -70,12 +72,12 @@ const Carrito = () => {
                         </tbody>
                     </Table>
                     <div>
-                        <h2>Precio total: ${cartTotal}</h2>
+                        <h2>Precio total: {cartTotal.toLocaleString(undefined, {maximumFractionDigits:2})} </h2>
                     </div>
                     <div>
                         <Row>
                             <Col md={4}>
-                                <Button>Pagar</Button>
+                                <a href="/checkout"><Button>Pagar</Button></a>
                             </Col>
                             <Col md={{span:2 , offset: 4}}>
                                 <Button variant="danger"

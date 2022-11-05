@@ -13,7 +13,7 @@ const Itemcard = (props) => {
             <Card.Body>
                 <Card.Title>{props.title}</Card.Title>
                 <Card.Text>
-                    <h5>${props.price}</h5>
+                    <h5>${props.price.toLocaleString(undefined, {maximumFractionDigits: 2})}</h5>
                 </Card.Text>
                 <a href="/Carrito"><Button variant="dark" onClick={() => addItem(props.item)}>Agregar al carrito</Button></a>
             </Card.Body>
