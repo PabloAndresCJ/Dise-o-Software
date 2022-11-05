@@ -14,6 +14,7 @@ import Pagina_Headphones from "./Componentes/Página_Headphones";
 import Pagina_Deportes from "./Componentes/Página_Deportes";
 import Pagina_InEar from "./Componentes/Página_InEar";
 import Pagina_Parlantes from "./Componentes/Página_Parlantes";
+import PaypalOrder from "./Componentes/PaypalOrder";
 
 function App() {
     const {Headphones, Deportes} = data_HP
@@ -43,8 +44,13 @@ function App() {
                         left: "50%",
                         transform: "translate(-50%, -50%)"
                       }}
-                        ><div className='card text-white bg-secondary p-3 '><h5 className='card-header'>Contacto</h5><div className='card-body rounded-3'>
+                        ><div className='card text-white bg-secondary p-3 '>
+                      <br/>
+                      <h5 className='card-header'>Contacto</h5><div className='card-body rounded-3'>
                         <Form src={'https://nskwitolzecqjbm.form.io/mensajes'}/></div></div></Container>}/>
+
+                  <Route path='/checkout' element={<CartProvider> <PaypalOrder/> </CartProvider>}/>
+
               </Routes>
           </BrowserRouter>
       </div>
