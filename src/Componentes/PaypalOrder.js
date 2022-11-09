@@ -3,8 +3,13 @@ import { PayPalScriptProvider } from "@paypal/react-paypal-js";
 
 import PayPalButton from "./BotónPayPal";
 import {useCart} from "react-use-cart";
+import {useAuth0} from "@auth0/auth0-react";
+import {LoginButton} from "./LoginButton";
 
 const PaypalOrder = () => {
+
+    const {isAuthenticated} = useAuth0;
+
     const initialOptions = {
         "client-id": "test",
         currency: "USD",
@@ -36,8 +41,10 @@ const PaypalOrder = () => {
         cartTotal,
     } = useCart();
 
+
     return (
-        <>
+
+        <div>
             <br/>
             <br/>
             <h3>Total a pagar: ${cartTotal.toLocaleString(undefined, {maximumFractionDigits:2})}</h3>
@@ -47,7 +54,10 @@ const PaypalOrder = () => {
                     onApprove={onApproveHandler}
                 />
             </PayPalScriptProvider>
-        </>
+        </div>
+
+
+
     );
 };
 

@@ -5,6 +5,7 @@ import Table from 'react-bootstrap/Table';
 import {Route} from "react-router-dom";
 import Row from "react-bootstrap/Row";
 import Col from "react-bootstrap/Col";
+import {useAuth0} from "@auth0/auth0-react";
 
 const Carrito = () => {
 
@@ -18,6 +19,7 @@ const Carrito = () => {
         removeItem,
         emptyCart
     } = useCart();
+
 
 
     if (isEmpty) return <div>
@@ -77,6 +79,9 @@ const Carrito = () => {
                     <div>
                         <Row>
                             <Col md={4}>
+
+
+
                                 <a href="/checkout"><Button>Pagar</Button></a>
                             </Col>
                             <Col md={{span:2 , offset: 4}}>
