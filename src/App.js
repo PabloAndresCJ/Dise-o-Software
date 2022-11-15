@@ -39,10 +39,8 @@ function App() {
                     
                   <Route path='/Contacto' element={<Container
                         style={{
-                        position: "absolute",
-                        top: "50%",
-                        left: "50%",
-                        transform: "translate(-50%, -50%)"
+                        position: "relative",
+                        transform: "translate(0, 10%)"
                       }}
                         ><div className='card text-white bg-secondary p-3 '>
                       <br/>
