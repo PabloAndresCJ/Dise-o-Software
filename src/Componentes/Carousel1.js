@@ -28,7 +28,7 @@ const Carrusel = () => {
                 <Carousel.Caption>
                     <h1 ><strong>Headphones</strong></h1>
                     <p >Inalambricos y con cancelación de ruido.</p>
-                    <Button href="Catalog_Headphones" variant="dark" size="lg">Revisar promociones</Button>
+                    <Button href="Headphones" variant="dark" size="lg">Revisar promociones</Button>
                 </Carousel.Caption>
             </Carousel.Item>
             <Carousel.Item interval={4000}>
@@ -55,7 +55,7 @@ const Carrusel = () => {
                     <p>
                         Con resistencia al agua IP67
                     </p>
-                    <Button href="/Catalog_Parlantes" variant="dark" size="lg">Revisar parlantes</Button>
+                    <Button href="/Parlantes" variant="dark" size="lg">Revisar parlantes</Button>
                 </Carousel.Caption>
             </Carousel.Item>
         </Carousel>

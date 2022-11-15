@@ -67,9 +67,6 @@ const Profile = () => {
                                 </tbody>
                             </Table>
                         </Tab>
-                        <Tab eventKey="data" title='data'>
-
-                        </Tab>
                     </Tabs>
                     <LogoutButton/>
                 </div>
