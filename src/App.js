@@ -15,7 +15,7 @@ import Pagina_Deportes from "./Componentes/Página_Deportes";
 import Pagina_InEar from "./Componentes/Página_InEar";
 import Pagina_Parlantes from "./Componentes/Página_Parlantes";
 import PaypalOrder from "./Componentes/PaypalOrder";
-
+import Profile from "./Componentes/Profile";
 function App() {
     const {Headphones, Deportes} = data_HP
   return (
@@ -50,7 +50,7 @@ function App() {
                         <Form src={'https://nskwitolzecqjbm.form.io/mensajes'}/></div></div></Container>}/>
 
                   <Route path='/checkout' element={<CartProvider> <PaypalOrder/> </CartProvider>}/>
-
+                  <Route path='/Perfil' element={<Profile/>}/>
               </Routes>
           </BrowserRouter>
       </div>
